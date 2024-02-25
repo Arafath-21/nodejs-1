@@ -3,7 +3,7 @@ const app        = express();
 const fs         = require('fs');
 const path       = require('path');
 const {format}     = require('date-fns');
-const PORT       = process.env.port || 2000;
+const PORT       = process.env.PORT || 2000;
 const folderPath = path.join(__dirname,'files');
 
 app.post('/create',(req,res)=>{
